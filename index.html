@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>LCM Challenge Game</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-container">
+    <section class="game-card">
+      <header class="game-header">
+        <h1>LCM Challenge Game</h1>
+        <p>Find the Least Common Multiple and improve your math skills.</p>
+      </header>
+
+      <section class="score-panel">
+        <div>
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+
+        <div>
+          <span class="label">Question</span>
+          <strong id="questionCounter">1</strong>
+        </div>
+      </section>
+
+      <section class="problem-section">
+        <p class="instruction">Find the LCM of:</p>
+
+        <div class="numbers-box">
+          <span id="firstNumber">6</span>
+          <span class="and-symbol">&</span>
+          <span id="secondNumber">8</span>
+        </div>
+
+        <label for="answerInput">Your answer:</label>
+        <input 
+          type="number" 
+          id="answerInput" 
+          placeholder="Type the LCM here"
+        />
+
+        <button id="checkButton">Check Answer</button>
+        <button id="hintButton" class="secondary-button">Show Hint</button>
+        <button id="nextButton" class="secondary-button">Next Challenge</button>
+      </section>
+
+      <section class="feedback-section">
+        <p id="feedbackMessage">Write your answer and click Check Answer.</p>
+      </section>
+
+      <section class="hint-section" id="hintSection">
+        <h2>Hint</h2>
+        <p id="hintText"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
