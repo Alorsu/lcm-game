@@ -1,1 +1,178 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Century Gothic", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7ff, #e8f3ff);
+  color: #1f2937;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.game-card {
+  width: 100%;
+  max-width: 720px;
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.game-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #1d4ed8;
+}
+
+.game-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.score-panel div {
+  flex: 1;
+  background: #eff6ff;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.score-panel strong {
+  font-size: 1.6rem;
+  color: #1d4ed8;
+}
+
+.problem-section {
+  text-align: center;
+}
+
+.instruction {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.numbers-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #111827;
+}
+
+.and-symbol {
+  color: #2563eb;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 14px;
+  font-size: 1.1rem;
+  border: 2px solid #bfdbfe;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+button {
+  display: inline-block;
+  margin: 6px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.04);
+}
+
+.secondary-button {
+  background: #64748b;
+}
+
+.secondary-button:hover {
+  background: #475569;
+}
+
+.feedback-section {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.hint-section {
+  display: none;
+  margin-top: 20px;
+  padding: 18px;
+  background: #fff7ed;
+  border-left: 6px solid #f97316;
+  border-radius: 16px;
+}
+
+.hint-section h2 {
+  margin-top: 0;
+  color: #c2410c;
+}
+
+@media (max-width: 600px) {
+  .game-card {
+    padding: 22px;
+  }
+
+  .game-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .numbers-box {
+    font-size: 2.4rem;
+  }
+
+  .score-panel {
+    flex-direction: column;
+  }
+}
